@@ -8,11 +8,6 @@ import { fetchContacts } from 'store/operations';
 import { getContacts, getError, getIsLoading } from 'store/selectors';
 import ContactList from './ContactList/ContactList';
 
-
-
-
-
-
 const App = () => {
   const dispatch = useDispatch()
 
@@ -25,10 +20,6 @@ const App = () => {
 
   const isLoading = useSelector(getIsLoading)
   const isError = useSelector(getError)
-
-
-
-
 
   if (isLoading) {
     return <div>Is Loading...</div>

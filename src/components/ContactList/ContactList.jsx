@@ -4,10 +4,6 @@ import { deleteContact } from "store/operations";
 
 import { getContacts, getFilter } from "store/selectors";
 
-
-
-
-
 const ContactList = () => {
 
   const dispatch = useDispatch();
@@ -33,8 +29,6 @@ const ContactList = () => {
   const deleteContactById = (id) => {
     dispatch(deleteContact(id))
   }
-
-
 
   return (
     <>
